@@ -1,0 +1,73 @@
+{
+    "massagem" : {
+        "participantes" : [
+            {
+                "id": 0,
+                "nome": "Douglas Sampaio",
+                "horario": "13:00",
+                "control": true 
+            },
+            
+            {
+                "nome": "Douglas Sampaio",
+                "horario": "14:00",
+                "control": true 
+            },
+            {
+                "nome": "Douglas Sampaio",
+                "horario": "15:00",
+                "control": true 
+            }
+        ]
+    },
+    "videogame" : {
+        "participantes" : [
+            {
+                "id":0,
+                "nome": "Rodrigo Sampaio",
+                "horario": "13:00",
+                "control": true 
+            },
+            {
+                "nome": "Rodrigo Sampaio",
+                "horario": "14:00",
+                "control": true 
+            },
+            {
+                "nome": "Rodrigo Sampaio",
+                "horario": "15:00",
+                "control": true 
+            },
+            {
+                "nome": "Rodrigo Sampaio",
+                "horario": "16:00",
+                "control": true 
+            }
+        ]
+    },
+    "manicure" : {
+        "participantes" : [
+            {
+                "id": 0,
+                "nome": "Paula Sampaio",
+                "horario": "14:00",
+                "control": true 
+            },
+            {
+                "nome": "Paula Sampaio",
+                "horario": "18:00",
+                "control": true 
+            },
+            {
+                "nome": "Paula Sampaio",
+                "horario": "20:00",
+                "control": true 
+            },
+            {
+                "nome": "Paula Sampaio",
+                "horario": "13:00",
+                "control": true 
+            }
+        ]
+    }
+}
