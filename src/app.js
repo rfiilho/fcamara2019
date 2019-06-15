@@ -6,9 +6,10 @@ const userRoute = require('./routes/userRoute');
 const app = express();
 const router = express.Router();
 
+
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
-
+app.use(express.static(__dirname + '/'));
 app.use('/', index);
 app.use('/user', userRoute);
 
