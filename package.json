@@ -18,8 +18,11 @@
   "author": "luizfanunes@hotmail.com",
   "license": "ISC",
   "dependencies": {
+    "curl": "^0.1.4",
     "express": "^4.17.1",
+    "node-slack-notify": "^0.1.0",
     "nodemon": "^1.19.1",
+    "slack-notify": "^0.1.7",
     "tape": "^4.10.2"
   }
 }

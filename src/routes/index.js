@@ -9,4 +9,8 @@ router.get('/', function (req, res, next) {
     });
 });
 
+router.get('/notification', function (req, res, next) {
+    res.status(200).send("OKAY");
+});
+
 module.exports = router;
