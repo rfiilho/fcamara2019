@@ -1,0 +1,27 @@
+:root{
+    --container-fluid-max-width: 700px;
+    --container-fluid-max-height: 700px;
+    --filas-width: 90%;
+    --filas-height: 80%;
+    --control-width: 30%;
+    --control-height: 10%;
+}
+.container-fluid{
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: var(--filas-height) var(--control-height);
+    grid-template-areas: 
+        'filas'
+        'control';
+        grid-row-gap: 50px
+}
+.filas{
+    grid-area: filas;
+}
+.control{
+    grid-area: control;
+}
+.filas .btn{
+    height: 500px; 
+}
