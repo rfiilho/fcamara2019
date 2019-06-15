@@ -4,7 +4,7 @@ var options = {
   uri: 'https://hooks.slack.com/services/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',
   method: 'POST',
   json: {
-    "text": "Adicionado!"
+    "text": "Paula Sampaio agendou um horário!"
   }
 };
 
