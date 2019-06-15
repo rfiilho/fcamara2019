@@ -21,6 +21,10 @@
   "dependencies": {
     "curl": "^0.1.4",
     "express": "^4.17.1",
+<<<<<<< HEAD
+    "fs": "0.0.1-security",
+=======
+>>>>>>> 10c0e54b151a46c0f71450b56fd1e4331332c49d
     "http-server": "^0.11.1",
     "node-slack-notify": "^0.1.0",
     "nodemon": "^1.19.1",

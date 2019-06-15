@@ -19,7 +19,7 @@
         <div class="formNovoParticao">
             <form action="">
                 <input type="number" name="id">
-                <input type="text" name="name" placeholder="Digite o nome do participant">
+                <input type="text" name="name" placeholder="Participante">
                 <input type="time" name="time">
                 <input class="button adicionar" type="submit" value="Inserir na fila">
                 <input class="button deletar" type="submit" value="Deletar da fila">
@@ -34,22 +34,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>saassa</td>
-                        <td>13:30</td>
-                    </tr>
-                    <tr>
-                        <td>saassa</td>
-                        <td>13:30</td>
-                    </tr>
-                    <tr>
-                        <td>saassa</td>
-                        <td>13:30</td>
-                    </tr>
-                    <tr>
-                        <td>saassa</td>
-                        <td>13:30</td>
-                    </tr>
+                    
                 </tbody>
             </table>
         </div>
@@ -60,12 +45,6 @@
     <script src="js/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/filas.js"></script>
-    <script>
-        $.getJSON('../bd/filas.json',
-            function (data) {
-                
-            }
-        );
     </script>
 </body>
 
