@@ -10,7 +10,7 @@ var options = {
 
 request(options, function (error, response, body) {
   if (!error && response.statusCode == 200) {
-    console.log(body.id) // Print the shortened url.
+    console.log(body.id)
   }
 });
 
