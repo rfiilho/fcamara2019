@@ -1,12 +1,16 @@
-var slackURL = 'https://hooks.slack.com/services/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';
-var slack = require('slack-notify')(slackURL);
+var request = require('request');
 
+var options = {
+  uri: 'https://hooks.slack.com/services/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',
+  method: 'POST',
+  json: {
+    "text": "Adicionado!"
+  }
+};
 
+request(options, function (error, response, body) {
+  if (!error && response.statusCode == 200) {
+    console.log(body.id) // Print the shortened url.
+  }
+});
 
-slack.alert({
-    text: 'Current server stats',
-    fields: {
-      'CPU usage': '7.51%',
-      'Memory usage': '254mb'
-    }
-  });
