@@ -1,12 +1,11 @@
 const express = require('express');
+var path = require('path');
 
 const router = express.Router();
+router.use(express.static(__dirname + '/'));
 
 router.get('/', function (req, res, next) {
-    res.status(200).send({
-        'status': 'UP',
-        'title': 'Hackaton FCamara API'
-    });
+    res.sendFile(path.join(__dirname + '../../view/index.html'));
 });
 
 module.exports = router;
