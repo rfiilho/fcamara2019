@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "http-server .",
     "test": "node ./tests/test.js",
     "start": "nodemon ./bin/server.js"
   },
@@ -20,6 +21,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "nodemon": "^1.19.1",
-    "tape": "^4.10.2"
+    "tape": "^4.10.2",
+    "http-server": "^0.11.1"
   }
 }

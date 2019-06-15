@@ -9,14 +9,65 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Filas</title>
+    <style>
+        :root {
+            --container-fluid-max-width: 700px;
+            --container-fluid-max-height: 700px;
+            --filas-width: 90%;
+            --filas-height: 80%;
+            --control-width: 30%;
+            --control-height: 10%;
+            --bege: #ffeed0;
+            --orange-light: #f79f24;
+            --dark-orange: #f12d2d;
+            --purple: #7c064d;
+        }
+
+        .container-fluid {
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: var(--filas-height) var(--control-height);
+            grid-template-areas:
+                'filas'
+                'control';
+            grid-row-gap: 50px
+        }
+
+        .filas {
+            grid-area: filas;
+        }
+
+        .control {
+            grid-area: control;
+        }
+
+        .filas .btn {
+            height: 500px;
+            background-color: var(--orange);
+            outline: none;
+            border: none;
+        }
+
+        .filas .btn:nth-child(odd) {
+            background-color: var(--orange-light)
+        }
+
+        .filas .btn:hover {
+            background-color: var(--purple);
+        }
+    </style>
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="filas btn-group" role="group" aria-label="Button group">
-            <button class="btn btn-primary" type="button" onclick="window.location.href='massagem.html';">Massagem</button>
-            <button class="btn btn-primary" type="button" onclick="window.location.href='videogame.html';">Videogame</button>
-            <button class="btn btn-primary" type="button" onclick="window.location.href='manicure.html';"> Manicure</button>
+            <button class="btn btn-primary" type="button"
+                onclick="window.location.href='massagem.html';">Massagem</button>
+            <button class="btn btn-primary" type="button"
+                onclick="window.location.href='videogame.html';">Videogame</button>
+            <button class="btn btn-primary" type="button" onclick="window.location.href='manicure.html';">
+                Manicure</button>
         </div>
         <div class="control btn-group" role="group" aria-label="Button group">
             <button class="btn btn-success" type="button">Adicionar</button>
@@ -26,8 +77,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="../bd/populaPagina.js"></script>
 </body>
 
 </html>
