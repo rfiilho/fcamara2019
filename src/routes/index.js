@@ -1,17 +1,26 @@
 const express = require('express');
+var path = require('path');
+var slack = require('../services/notification');
+
 
 const router = express.Router();
-const path = require('path');
+router.use(express.static(__dirname + '../../view/'));
 
-router.get('/', function (req, res, next) {
-    res.status(200).send({
-        'status': 'UP',
-        'title': 'Hackaton FCamara API'
-    });
+router.post('/notification/', (req, res) => {
+    res.status(200).send('');
 });
 
-router.get('/notification', function (req, res, next) {
-    res.status(200).sendFile(path.join(__dirname+"../../services/notification.js"));
+router.get('/manicure/', (req, res) => {
+    res.sendFile(path.join(__dirname + '../../view/manicure.html'));
 });
+
+router.get('/massagem/', (req, res) => {
+    res.sendFile(path.join(__dirname + '../../view/massagem.html'));
+});
+
+router.get('/videogame/', (req, res) => {
+    res.sendFile(path.join(__dirname + '../../view/videogame.html'));
+});
+
 
 module.exports = router;
