@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "http-server .",
     "test": "node ./tests/test.js",
     "start": "nodemon ./bin/server.js"
   },
@@ -20,10 +21,10 @@
   "dependencies": {
     "curl": "^0.1.4",
     "express": "^4.17.1",
+    "http-server": "^0.11.1",
     "node-slack-notify": "^0.1.0",
     "nodemon": "^1.19.1",
     "request": "^2.88.0",
-    "slack-notify": "^0.1.7",
     "tape": "^4.10.2"
   }
 }
